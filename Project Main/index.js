@@ -45,7 +45,7 @@ app.post('/login', (request, response) => {
 
 dbInit = require(__dirname + '/modules/db-connection/MongoDB.js').dbInit;
 
-// call once, never call again
+// initialise db connection
 dbInit();
 
 // create admin account test
@@ -62,4 +62,4 @@ let admin = createUser('testAdminName', 'testPassword'); // test account
 // admin.save((err) => {
 //   if(err) console.log(err);
 //   else console.log(admin.username + ' saved successfully');
-// });
+// }); // run this once to save admin to db then delete this code
