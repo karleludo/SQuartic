@@ -1,6 +1,5 @@
 const express = require('express'); // import express
 const bodyParser = require('body-parser'); // import bodyparser
-const mongoose = require('mongoose'); // import mongoose
 
 const app = express();
 
@@ -56,6 +55,9 @@ let admin = createUser('testAdminName', 'testPassword'); // test account
 
 // upload admin credentials to db
 // TODO: bcrypt password
+
+// run 'mongod' before running 'node index.js'
+// uncomment and run once to save admin credentials to db
 
 // admin.save((err) => {
 //   if(err) console.log(err);
