@@ -49,7 +49,8 @@ app.post('/admin', (request, response) => {
     if (err) {
       console.log(err);
     } else if (result) {
-      response.send('good credentials'); // TODO: redirect to admin dashboard
+      // response.send('good credentials'); // TODO: redirect to admin dashboard
+      response.render('admin-home');
     } else {
       // response.send('invalid credentials');
       let errors = ['invalid credentials'];
