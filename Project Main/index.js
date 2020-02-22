@@ -1,12 +1,18 @@
 const express = require('express'); // import express
 const bodyParser = require('body-parser'); // import bodyparser
+const ejs = require('ejs');
 
 const app = express();
+
+app.set('view engine', 'ejs');
 
 // bodyparser encode utf-8
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+// css and client side javascript files are located here
+app.use(express.static(__dirname + '/public'));
 
 const port = (process.env.PORT) ? process.env.PORT : 3000;
 
@@ -23,22 +29,34 @@ app.get('/', (request, response) => {
 
 // get admin
 app.get('/admin', (request, response) => {
-  response.sendFile(__dirname + '/admin-login.html');
+  // response.sendFile(__dirname + '/admin-login.html');
+  let ejsOptions = {
+    errors: null
+  }
+  response.render('login', ejsOptions);
 });
 
 const User = require(__dirname + '/modules/user-model/Admin.js').User;
 
 // post login credentials
-app.post('/login', (request, response) => {
+app.post('/admin', (request, response) => {
   console.log(request.body); //console test TODO:
-  User.findOne({username: request.body.username, password: request.body.password}, (err, result) => {
-    if(err) {
+
+  User.findOne({
+    username: request.body.username,
+    password: request.body.password
+  }, (err, result) => {
+    if (err) {
       console.log(err);
-    }
-    else if (result) {
+    } else if (result) {
       response.send('good credentials'); // TODO: redirect to admin dashboard
     } else {
-      response.send('invalid credentials');
+      // response.send('invalid credentials');
+      let errors = ['invalid credentials'];
+      let ejsVariables = {
+        errors: errors
+      };
+      response.render('login', ejsVariables);
     }
   })
 });

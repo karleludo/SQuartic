@@ -1,0 +1,83 @@
+/* test */
+.container {
+  background-image: url("../images/login1_bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left {
+  width: 35%;
+}
+
+.right {
+  background-color: #eee;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* logo */
+.login-logo {
+  width: 10rem;
+}
+
+/* form */
+form {
+  color: #8C0001;
+}
+
+input, label {
+  display: block;
+}
+
+input {
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 20rem;
+  transition: all .2s;
+}
+
+input[type="text"]:focus {
+  border-color: #8C0001;
+}
+
+input[type="password"]:focus {
+  border-color: #8C0001;
+}
+
+input[type="submit"] {
+  background-color: #8C0001;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+  width: 340px;
+}
+
+label {
+  position: relative;
+  left: 1.5rem;
+  margin: 0.5rem;
+}
+
+/* error message */
+.error-container {
+  border-radius: 5px;
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  background-color: red;
+}
+
+.error-message {
+  color: #fff;
+}
