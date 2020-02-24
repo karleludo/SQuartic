@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>index</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/login.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+    </div>
+    <div class="right">
+      <img class="login-logo" src="images/logo.png" alt="">
+      <% if(errors) { %>
+        <div class="error-container">
+          <% errors.forEach((error) => { %>
+            <p class="error-message"><%= error %></p>
+            <% }); %>
+        </div>
+      <% } %>
+      <form action="/admin" method="POST">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+        <label for="password">Password</label>
+        <input type="password" name="password">
+        <input type="submit" name="submit" value="sign in">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
