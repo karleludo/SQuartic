@@ -36,6 +36,12 @@ app.get('/admin', (request, response) => {
   response.render('login', ejsOptions);
 });
 
+// logout get
+
+app.get('/admin/logout', (request,response)=>{
+  response.send('logged out');
+});
+
 const User = require(__dirname + '/modules/user-model/Admin.js').User;
 
 // post login credentials

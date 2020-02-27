@@ -10,3 +10,7 @@ body {
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+
+ul li {
+  list-style-type: none;
+}
