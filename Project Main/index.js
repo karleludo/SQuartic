@@ -65,13 +65,16 @@ app.get('/admin', (request, response) => {
 });
 
 // logout get
-
 app.get('/admin/logout', (request,response)=>{
   if(request.session) {
     request.session.cookieId = "";
     response.redirect('/admin');
   }
+});
 
+//link to forms-home
+app.get('/forms-home', (request,response)=>{
+  response.render('forms-home');
 });
 
 const User = require(__dirname + '/modules/user-model/Admin.js').User;
