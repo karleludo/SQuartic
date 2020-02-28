@@ -1,0 +1,54 @@
+/* Global Css */
+body{
+    margin: 0;
+    padding:0;
+    background: #F8F8F8;
+    text-align: center;
+    font-family: Montserrat;
+    
+}
+/* form css */
+.form-container{
+    width: 586px;
+    height: 580;
+    margin: 10% auto;
+    padding: 5%;
+    background: white;
+    box-shadow: 3px 3px  10px rgba(12, 12, 12, 0.472);
+}
+
+.form-text{
+    text-align: justify;
+  }
+
+  .cta-begin{
+    text-decoration: none;
+    color: #A22630;
+    font-weight: bold;
+    margin: auto 0 auto 75%;
+  }
+
+  /* header css */
+  header{
+    background-color: #A22630;
+    text-align: left;
+    padding: 10px;
+  }
+  img{
+      width: 119px;
+      height: 127px;   
+  }
+
+.flexbox-wrapper{
+    display: flex;
+    align-items: center;
+   
+}
+.header-text{
+    margin-left: 30px;
+    font-family: Garamond;
+    color: white;
+  
+}
+
+

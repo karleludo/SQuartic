@@ -1,0 +1,38 @@
+/* Global Css */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+/* End of Global Css */
+
+
+/* Header Css */
+header{
+    background-color: #A22630;
+    text-align: left;
+    padding: 10px;
+  }
+img{
+     width: 119px;
+     height: 127px;   
+  }
+
+.flexbox-wrapper{
+    display: flex;
+    align-items: center;
+   
+}
+.header-text{
+    margin-left: 30px;
+    font-family: Garamond;
+    color: white;
+  
+}
+/* End of Header Css */
+
+/* Table Css */
+.table{
+    margin: 5% auto;
+}
+/* End of Table Css */
