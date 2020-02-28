@@ -1,10 +1,20 @@
 const express = require('express'); // import express
 const bodyParser = require('body-parser'); // import bodyparser
 const ejs = require('ejs');
-
+const cookieSession = require('cookie-session');
 const app = express();
 
 app.set('view engine', 'ejs');
+
+console.log(Date.now());
+
+
+//cookieSession
+app.use(cookieSession({
+  name: 'session',
+  secret: 'secret'
+}));
+
 
 // bodyparser encode utf-8
 app.use(bodyParser.urlencoded({
@@ -29,11 +39,39 @@ app.get('/', (request, response) => {
 
 // get admin
 app.get('/admin', (request, response) => {
-  // response.sendFile(__dirname + '/admin-login.html');
-  let ejsOptions = {
-    errors: null
+
+
+  if(request.session) {
+    let cookieId = request.session.cookieId;
+    User.findOne({cookieId}, (err, result) => {
+      if(err) console.log(err);
+      else if(result) {
+        let adminVariables = {
+          name: result.username
+        }
+        response.render('admin-home', adminVariables);
+      }
+      else {
+        let ejsOptions = {
+          errors: null
+        }
+        response.render('login', ejsOptions);
+      }
+      
+    })
   }
-  response.render('login', ejsOptions);
+  // response.sendFile(__dirname + '/admin-login.html');
+
+});
+
+// logout get
+
+app.get('/admin/logout', (request,response)=>{
+  if(request.session) {
+    request.session.cookieId = "";
+    response.redirect('/admin');
+  }
+
 });
 
 const User = require(__dirname + '/modules/user-model/Admin.js').User;
@@ -49,8 +87,19 @@ app.post('/admin', (request, response) => {
     if (err) {
       console.log(err);
     } else if (result) {
+      console.log(result._id);
+      let cookieId = Date.now() + result._id;
+      request.session.cookieId = cookieId;
+      User.findOneAndUpdate({username: result.username}, {cookieId}, (err, output) => {
+        if(err) console.log(err);
+        else {
+          console.log('cookieId updated successfully');
+          // response.render('admin-home');
+          response.redirect('/admin');
+        }
+        
+      });
       // response.send('good credentials');
-      response.render('admin-home');
     } else {
       // response.send('invalid credentials');
       let errors = ['invalid credentials'];
@@ -61,6 +110,7 @@ app.post('/admin', (request, response) => {
     }
   })
 });
+
 
 dbInit = require(__dirname + '/modules/db-connection/MongoDB.js').dbInit;
 
