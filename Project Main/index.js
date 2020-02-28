@@ -34,7 +34,7 @@ app.listen(port, (err) => {
 
 // get index
 app.get('/', (request, response) => {
-  response.sendFile(__dirname + '/index.html');
+  response.render('index');
 });
 
 // get admin
