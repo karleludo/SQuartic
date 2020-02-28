@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- header TODO : templates for modular header-->
     <header>
         <!-- header nav -->
+        <h1>Hello <%= name%> </h1>
         <nav>
             <ul>
-                <li>header item01</li>
+                <li><a href="/admin/logout">logout</a></li>
             </ul>
         </nav>
     </header>
@@ -23,9 +29,9 @@
 
     <!-- CRUD main field -->
     <section class="CRUD">
-
+        
         <nav>
-        <!-- navigation -->
+            <!-- navigation -->
             <ul>
                 <li>nav item01</li>
             </ul>
@@ -43,4 +49,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
