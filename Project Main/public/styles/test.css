@@ -1,0 +1,11 @@
+input, select {
+  display: block;
+  width: 10rem;
+  box-sizing: content-box;
+  margin: 0.4rem 0;
+  padding: 0;
+}
+
+label {
+  font-size: 0.9rem;
+}
