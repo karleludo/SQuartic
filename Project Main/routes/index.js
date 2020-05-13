@@ -50,4 +50,8 @@ router.post('/test', (req, res) => {
   });
 });
 
+router.post('/finish', (req, res) => {
+  console.log(req.body);
+});
+
 module.exports = router;
