@@ -26,11 +26,18 @@ router.get('/finish', (req, res) => {
   res.render('finish');
 });
 
+=======
+router.post('/page2', (req,res) => {
+  res.render('page2');
+});
+
 router.get('/test', (req, res) => {
   res.render('test');
 });
 
+
 const createStudent = require(process.cwd() + '/modules/user-model/Student.js').createStudent;
+const createForm = require(process.cwd() + '/modules/user-model/Form.js').createForm;
 
 router.post('/test', (req, res) => {
   console.log(req.body);
@@ -41,13 +48,23 @@ router.post('/test', (req, res) => {
   let nationality = req.body.nationality;
   let email = req.body.email;
   let student = createStudent(name, gender, course, contact, nationality, email);
+  let questions = req.body.q1.id + req.body.q2.id + req.body.q3.id;
+  let answers = req.body.q1 + req.body.q2 + req.body.q3;
+  let form = createForm(student,questions,answers);
+  
   student.save((err, data) => {
     if(err) {
       res.send(err);
     } else {
-      res.send(data);
+      form.save((err,date)=>{
+        if(data){
+          res.send("success");
+        }
+      });
     }
   });
+
+  
 });
 
 router.post('/finish', (req, res) => {

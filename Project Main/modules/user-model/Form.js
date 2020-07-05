@@ -5,13 +5,13 @@ const formSchema = mongoose.Schema({
   student: {
     type: studentSchema,
     required: true
-  }
+  },
   questions: {
-    type: [String],
+    type: String,
     required: true
   },
   answers: {
-    type: [String],
+    type: String,
     required: true
   },
   dateAnswered: {
@@ -22,8 +22,8 @@ const formSchema = mongoose.Schema({
 
 const Form = mongoose.model('Form', formSchema);
 
-const createForm = (questions, answers) => {
-  return new Form({questions, answers});
+const createForm = (student,questions, answers,dateAnswered) => {
+  return new Form({student, questions, answers, dateAnswered});
 };
 
 module.exports.Form = Form;
