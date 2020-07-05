@@ -1,17 +1,28 @@
 const express = require('express'); // import express
 const bodyParser = require('body-parser'); // import bodyparser
 const ejs = require('ejs');
-
+const cookieSession = require('cookie-session');
 const app = express();
 
 app.set('view engine', 'ejs');
+
+dbInit = require(__dirname + '/modules/db-connection/MongoDB.js').dbInit;
+
+// initialise db connection
+dbInit();
+
+//cookieSession
+app.use(cookieSession({
+  name: 'session',
+  secret: 'secret'
+}));
 
 // bodyparser encode utf-8
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// css and client side javascript files are located here
+// images, css, and client side javascript files are located here
 app.use(express.static(__dirname + '/public'));
 
 const port = (process.env.PORT) ? process.env.PORT : 3000;
@@ -22,55 +33,27 @@ app.listen(port, (err) => {
   else console.log('running successfully at port ' + port);
 });
 
-// get index
-app.get('/', (request, response) => {
-  response.sendFile(__dirname + '/index.html');
+// rerouted routes to different files for easier coding
+// each route has its own file
+// eg. admin.js would have admin specific routes such as /admin and /admin/logout
+
+//  new index route
+app.use('/', require(process.cwd() + '/routes/index.js'));
+
+// new admin route
+app.use('/admin', require(process.cwd() + '/routes/admin.js'));
+
+// link to forms-home
+app.get('/forms-home', (request,response)=>{
+  response.render('forms-home');
 });
 
-// get admin
-app.get('/admin', (request, response) => {
-  // response.sendFile(__dirname + '/admin-login.html');
-  let ejsOptions = {
-    errors: null
-  }
-  response.render('login', ejsOptions);
-});
 
-const User = require(__dirname + '/modules/user-model/Admin.js').User;
-
-// post login credentials
-app.post('/admin', (request, response) => {
-  console.log(request.body); //console test TODO:
-
-  User.findOne({
-    username: request.body.username,
-    password: request.body.password
-  }, (err, result) => {
-    if (err) {
-      console.log(err);
-    } else if (result) {
-      // response.send('good credentials');
-      response.render('admin-home');
-    } else {
-      // response.send('invalid credentials');
-      let errors = ['invalid credentials'];
-      let ejsVariables = {
-        errors: errors
-      };
-      response.render('login', ejsVariables);
-    }
-  })
-});
-
-dbInit = require(__dirname + '/modules/db-connection/MongoDB.js').dbInit;
-
-// initialise db connection
-dbInit();
 
 // create admin account test
-const createUser = require(__dirname + '/modules/user-model/Admin.js').createUser;
-
-let admin = createUser('testAdminName', 'testPassword'); // test account
+// const createUser = require(__dirname + '/modules/user-model/Admin.js').createUser;
+//
+// let admin = createUser('testAdminName', 'testPassword'); // test account
 
 // upload admin credentials to db
 // TODO: bcrypt password
