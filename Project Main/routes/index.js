@@ -10,6 +10,23 @@ router.get('/page1', (req, res) => {
   res.render('page1');
 });
 
+router.get('/page2', (req, res) => {
+  res.render('page2');
+});
+
+router.get('/page3', (req, res) => {
+  res.render('page3');
+});
+
+router.get('/page4', (req, res) => {
+  res.render('page4');
+});
+
+router.get('/finish', (req, res) => {
+  res.render('finish');
+});
+
+=======
 router.post('/page2', (req,res) => {
   res.render('page2');
 });
@@ -48,6 +65,10 @@ router.post('/test', (req, res) => {
   });
 
   
+});
+
+router.post('/finish', (req, res) => {
+  console.log(req.body);
 });
 
 module.exports = router;
