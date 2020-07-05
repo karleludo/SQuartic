@@ -26,7 +26,7 @@ router.get('/finish', (req, res) => {
   res.render('finish');
 });
 
-=======
+
 router.post('/page2', (req,res) => {
   res.render('page2');
 });
