@@ -1,9 +1,26 @@
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 header {
   background: #8A0E18;
+  margin: 0px -8px 0px -8px;
 }
 
 header h1 {
+  padding: 1rem;
   color: #F8F8F8;
   font-family: Montserrat;
+  margin-top: 0;
+}
+
+header li {
+  list-style: none;
+}
+
+footer .school-info-container .logo-address-container .img-logo img {
+  width: 80px;
+  margin: 40px 20px 0 0;
 }
 /*# sourceMappingURL=main.css.map */

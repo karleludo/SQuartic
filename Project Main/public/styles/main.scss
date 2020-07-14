@@ -5,11 +5,32 @@ $title-font: Montserrat;
 $text-font:Segoe UI Light;
 
 
+body{
+margin-top: 0;
+margin-bottom: 0;
+}
+
 header{
   background: $primary-color;
+  margin: 0px -8px 0px -8px;
   h1{
+    padding: 1rem;
     color:$primary-color-text;
     font-family: Montserrat;
+    margin-top: 0;
+  }
+  li{
+      list-style: none;
+    .btn-logout{
+      
+    }
+  }
+}
+
+footer{
+  .school-info-container .logo-address-container .img-logo img{
+    width: 80px;
+    margin: 40px 20px 0 0;
   }
 }
 
