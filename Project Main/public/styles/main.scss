@@ -1,6 +1,13 @@
 $light-color: #F8F8F8;
+$light-color-text-dark: rgb(39, 39, 39);
+$light-color-text-light: #858585;
+
 $primary-color: #8A0E18;
-$primary-color-text: #F8F8F8;
+$primary-color-text-dark: #aaaaaa;
+$primary-color-text-light: #F8F8F8;
+
+
+
 $title-font: Montserrat;
 $text-font:Segoe UI Light;
 
@@ -15,15 +22,17 @@ header{
   margin: 0px -8px 0px -8px;
   h1{
     padding: 1rem;
-    color:$primary-color-text;
+    color:$primary-color-text-light;
     font-family: Montserrat;
     margin-top: 0;
   }
   li{
       list-style: none;
-    .btn-logout{
-      
-    }
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      a{
+        color: $primary-color-text-light;
+        text-decoration: none;
+      }
   }
 }
 

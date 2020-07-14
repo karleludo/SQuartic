@@ -17,6 +17,12 @@ header h1 {
 
 header li {
   list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header li a {
+  color: #F8F8F8;
+  text-decoration: none;
 }
 
 footer .school-info-container .logo-address-container .img-logo img {
