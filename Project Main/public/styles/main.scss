@@ -36,6 +36,28 @@ header{
   }
 }
 
+.hero {
+  
+  .container{
+    h1{
+      font-family: $text-font;
+      font-size: 2em;
+      color: $primary-color-text-light;
+    }
+    background: url("/images/lpu2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+  }
+}
+
+.reports-field{
+  font-family: $text-font;
+  .container{
+    margin: 1em 4em 1em 4em;
+  }
+}
+
 footer{
   .school-info-container .logo-address-container .img-logo img{
     width: 80px;

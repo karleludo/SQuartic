@@ -25,6 +25,27 @@ header li a {
   text-decoration: none;
 }
 
+.hero .container {
+  background: url("/images/lpu2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+}
+
+.hero .container h1 {
+  font-family: Segoe UI Light;
+  font-size: 2em;
+  color: #F8F8F8;
+}
+
+.reports-field {
+  font-family: Segoe UI Light;
+}
+
+.reports-field .container {
+  margin: 1em 4em 1em 4em;
+}
+
 footer .school-info-container .logo-address-container .img-logo img {
   width: 80px;
   margin: 40px 20px 0 0;
