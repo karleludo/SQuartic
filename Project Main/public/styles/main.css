@@ -1,11 +1,13 @@
 body {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background: #8A0E18;
-  margin: 0px -8px 0px -8px;
+  margin: 0;
+  width: 100vw;
+  position: relative;
 }
 
 header h1 {
@@ -30,43 +32,41 @@ header li a {
   text-decoration: none;
 }
 
-.hero .container .background-img {
+.hero .background-img {
   background: url("/images/lpu2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.hero .container .content {
-  position: absolute;
+.hero .content {
+  position: relative;
   left: 0;
   right: 0;
+  height: inherit;
+  width: inherit;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
-.hero .container h1 {
+.hero h1 {
   margin: 0 0 0 0;
-  padding: 1rem 0 0 3rem;
+  padding: 1rem 0 1rem 13rem;
   font-family: Segoe UI Light;
   font-size: 3em;
   color: #F8F8F8;
   position: relative;
 }
 
-.reports-field {
+.control-panel {
   font-family: Segoe UI Light;
 }
 
-.reports-field .container {
-  margin: 1em 4em 1em 4em;
-}
-
-footer .school-info-container .logo-address-container .img-logo img {
-  width: 80px;
-  margin: 40px 20px 0 0;
+.control-panel .container {
+  position: relative;
+  margin: 1em 4em 1em 15em;
 }
 /*# sourceMappingURL=main.css.map */
