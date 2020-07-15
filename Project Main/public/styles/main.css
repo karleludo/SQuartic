@@ -1,26 +1,72 @@
 body {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background: #8A0E18;
-  margin: 0px -8px 0px -8px;
+  margin: 0;
+  width: 100vw;
+  position: relative;
 }
 
 header h1 {
   padding: 1rem;
   color: #F8F8F8;
   font-family: Montserrat;
-  margin-top: 0;
+  margin: 0 0 0 0;
+}
+
+header ul {
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 header li {
   list-style: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-footer .school-info-container .logo-address-container .img-logo img {
-  width: 80px;
-  margin: 40px 20px 0 0;
+header li a {
+  color: #F8F8F8;
+  text-decoration: none;
+}
+
+.hero .background-img {
+  background: url("/images/lpu2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hero .content {
+  position: relative;
+  left: 0;
+  right: 0;
+  height: inherit;
+  width: inherit;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.hero h1 {
+  margin: 0 0 0 0;
+  padding: 1rem 0 1rem 13rem;
+  font-family: Segoe UI Light;
+  font-size: 3em;
+  color: #F8F8F8;
+  position: relative;
+}
+
+.control-panel {
+  font-family: Segoe UI Light;
+}
+
+.control-panel .container {
+  position: relative;
+  margin: 1em 4em 1em 15em;
 }
 /*# sourceMappingURL=main.css.map */
