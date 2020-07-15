@@ -12,7 +12,12 @@ header h1 {
   padding: 1rem;
   color: #F8F8F8;
   font-family: Montserrat;
-  margin-top: 0;
+  margin: 0 0 0 0;
+}
+
+header ul {
+  margin: 0;
+  padding-bottom: 1rem;
 }
 
 header li {
@@ -25,17 +30,31 @@ header li a {
   text-decoration: none;
 }
 
-.hero .container {
+.hero .container .background-img {
   background: url("/images/lpu2.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.hero .container .content {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .hero .container h1 {
+  margin: 0 0 0 0;
+  padding: 1rem 0 0 3rem;
   font-family: Segoe UI Light;
-  font-size: 2em;
+  font-size: 3em;
   color: #F8F8F8;
+  position: relative;
 }
 
 .reports-field {

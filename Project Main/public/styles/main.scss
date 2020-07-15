@@ -24,7 +24,11 @@ header{
     padding: 1rem;
     color:$primary-color-text-light;
     font-family: Montserrat;
-    margin-top: 0;
+    margin: 0 0 0 0;
+  }
+  ul{
+    margin: 0;
+    padding-bottom: 1rem;
   }
   li{
       list-style: none;
@@ -37,18 +41,36 @@ header{
 }
 
 .hero {
-  
   .container{
-    h1{
-      font-family: $text-font;
-      font-size: 2em;
-      color: $primary-color-text-light;
+    
+    .background-img{
+      background: url("/images/lpu2.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+      padding: 3rem;
+      filter: blur(2px);
+      position: absolute;
+      left: 0;
+      right: 0;
     }
-    background: url("/images/lpu2.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
+    .content{
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    h1{
+      margin: 0 0 0 0;
+      padding: 1rem 0 0 3rem;
+      font-family: $text-font;
+      font-size: 3em;
+      color: $primary-color-text-light;
+      position: relative;
+    }
   }
+  
+ 
+  
+  
 }
 
 .reports-field{
