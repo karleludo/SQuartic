@@ -1,0 +1,35 @@
+.grid-container form{
+    text-align: left;
+
+    table{
+        width: 100%;
+        margin: 5% 0;
+        padding: 2%;
+        border: solid 2px $primary-color;
+        border-radius: 8px;
+        th{
+            padding: 10px 0;
+            text-align: center;
+        }
+        th:first-child{
+            text-align: left;
+        }
+        td{
+            padding: 3px 0;   
+        }
+        
+        span{
+            font-weight: bold;
+            margin-right:10px;
+        }
+        & .align{
+            display: flex;
+            align-items: baseline;
+            margin: 0;
+            padding: 0;
+            p{
+                margin: 6px;
+            }
+        }
+    }  
+}

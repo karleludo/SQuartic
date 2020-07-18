@@ -1,0 +1,28 @@
+@media  only screen and (max-width: 768px) {
+    H1{
+        font-size: 25px;
+    }
+    H3{
+        font-size: 15px;
+    }
+    .grid-container header img{
+        height: 80px;
+        width: 80px;
+    }
+        
+        
+    }
+ 
+
+  @media only screen and (max-width: 515px) {
+    H1{
+        font-size: 16px;
+    }
+    H3{
+        font-size: 12px;
+    }
+    .grid-container header img{
+        height: 50px;
+        width: 50px;
+    }
+  }
