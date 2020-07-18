@@ -4,7 +4,8 @@ const router = express.Router();
 router.get('/', (req, res) => {
   res.render('landing');
 });
-router.get('/form', (req, res) => {
+
+router.get('/start-form', (req, res) => {
   res.render('form');
 });
 router.get('/test', (req, res) => {
