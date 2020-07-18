@@ -1,0 +1,29 @@
+%btn{
+    background-color: $primary-color;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 22px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cta-start{
+    @extend %btn;
+    border-radius: 100px;
+    &:hover{
+        transform: scale(.98);
+        background-color: lighten($primary-color, 10%);
+    }
+}
+
+.cta-finish{
+    @extend %btn;
+    margin-top: 10px;
+    font-size: 16px;
+    &:hover{
+        transform: scale(.98);
+        background-color: lighten($primary-color, 10%);
+    }
+}

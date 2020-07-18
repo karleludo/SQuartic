@@ -1,0 +1,56 @@
+body{
+margin: 0;
+height: 100vh;
+font-family: Montserrat;
+background-color: $background-color;
+
+    .grid-container{
+        display:grid;
+        grid-template-columns: 1fr minmax(320px,2.5fr) 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 100vh;
+        row-gap: 10%;
+        header{
+            display: flex;
+            align-items: center;
+            background-color: $primary-color;
+            grid-row:1;
+            grid-column: 1/-1;
+            padding: 10px;
+            img{ 
+                width: 100px;
+                height: 100px;
+            }
+            .header-text{
+                margin-left: 30px;
+                color: white;
+                }
+            H1{
+                margin: 0px;
+            }
+            H3{
+                margin: 10px 0px 0px 0px;
+                font-weight: 600;
+            }
+        }    
+        form{
+            grid-column: 2;
+            align-self: center;            
+            text-align: center;
+            padding:5%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+        }
+    }
+}
+    
+    
+     
+
+    
+    
+    
+    
+    
+    
