@@ -44,7 +44,6 @@ app.use('/', require(process.cwd() + '/routes/index.js'));
 app.use('/admin', require(process.cwd() + '/routes/admin.js'));
 
 
-
 // create admin account test
 // const createUser = require(__dirname + '/modules/user-model/Admin.js').createUser;
 //
