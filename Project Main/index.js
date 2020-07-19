@@ -43,12 +43,6 @@ app.use('/', require(process.cwd() + '/routes/index.js'));
 // new admin route
 app.use('/admin', require(process.cwd() + '/routes/admin.js'));
 
-// link to forms-home
-app.get('/forms-home', (request,response)=>{
-  response.render('forms-home');
-});
-
-
 
 // create admin account test
 // const createUser = require(__dirname + '/modules/user-model/Admin.js').createUser;

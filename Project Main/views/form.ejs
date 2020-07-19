@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/page1.css">
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <header class="flexbox-wrapper">
+            <div>
+                <img src="../images/pics/logo.png" alt="LPU-PH-LOGO">
+            </div>
+            <div class="header-text">
+                <H1>LYCEUM OF THE PHILIPPINES</H1>
+                <h3>CAVITE CAMPUS</h3>
+            </div>
+        </header>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) {window.location='page1.html';}"> </iframe>
+
+        <form id="regForm"
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfFkfNeh8lVFoIjhkX9VPn1hDPaICSPbeuk_0hUPHNHlElcqw/formResponse"
+            name="form1" method="post" target="hidden_iframe" onsubmit="submitted=true">
+            <!-- tab1 -->
+            <div class="tab">
+                <h2 style="text-align:center"><b>Student Information</b></h2>
+                <h4 style="text-align:center"><b>All fields with an * (asterisk) are required</b></h4>
+
+
+                <div class="input-animate">
+                    <input type="text" oninput="this.className = ''" name="entry.1633304391" id="name" placeholder=" "
+                        required>
+                    <label for="name">Name *</label>
+                </div>
+
+                <div class="radio-btn">
+                    <input type="radio" oninput="this.className = ''" name="entry.572318903" id="male" value="male"
+                        required>
+                    <label for="male">
+                        <i class="fa fa-male" aria-hidden="true"></i>
+                        <span>Male</span>
+                    </label>
+                    <input type="radio" oninput="this.className = ''" name="entry.572318903" id="female" value="female">
+                    <label for="female">
+                        <i class="fa fa-female" aria-hidden="true"></i>
+                        <span>Female</span>
+                    </label>
+                </div>
+
+                <select id="course" oninput="this.className = ''" name="entry.1659613406" required>
+                    <option value="" selected disabled hidden>Select a Course</option>
+                    <option value="AB Communication">AB Communication</option>
+                    <option value="AB Foreign Service">AB Foreign Service</option>
+                    <option value="AB Legal Studies">AB Legal Studies</option>
+                    <option value="Bachelor in Secondary Education major in English">Bachelor in Secondary Education
+                        major
+                        in English </option>
+                    <option value="Bachelor of Arts in Multimedia Arts">Bachelor of Arts in Multimedia Arts </option>
+                    <option value="Bachelor of Elementary Education">Bachelor of Elementary Education </option>
+                    <option value="BS Accountancy">BS Accountancy </option>
+                    <option value="BS Architecture">BS Architecture </option>
+                    <option value="BS Biology">BS Biology </option>
+                    <option value="BS Business Administration major in: Management Accounting">BS Business
+                        Administration
+                        major in: Management Accounting </option>
+                    <option value="BS Business Administration major in: Operations Management">BS Business
+                        Administration
+                        major in: Operations Management </option>
+                    <option value="BS Business Administration major in: Human Resource Development Management">BS
+                        Business
+                        Administration major in: Human Resource Development Management </option>
+                    <option value="BS Business Administration major in: Marketing Management">BS Business Administration
+                        major in: Marketing Management </option>
+                    <option value="BS Civil Engineering">BS Civil Engineering </option>
+                    <option value="BS Computer Engineering">BS Computer Engineering </option>
+                    <option value="BS Computer Science">BS Computer Science </option>
+                    <option value="BS Customs Administration">BS Customs Administration </option>
+                    <option value="BS Electrical Engineering">BS Electrical Engineering </option>
+                    <option value="BS Electronics and communication Engineering">BS Electronics and communication
+                        Engineering </option>
+                    <option value="BS Industrial Engineering">BS Industrial Engineering </option>
+                    <option value="BS Information Technology">BS Information Technology </option>
+                    <option
+                        value="BS International Hospital Management with Specialization in: Cruise Line Operations in Culinary Arts">
+                        BS International Hospital Management with Specialization in: Cruise Line Operations in Culinary
+                        Arts
+                    </option>
+                    <option
+                        value="BS International Hospital Management with Specialization in: Cruise Line Operations in Hotel Services">
+                        BS International Hospital Management with Specialization in: Cruise Line Operations in Hotel
+                        Services </option>
+                    <option
+                        value="BS International Hospital Management with Specialization in: Culinary Arts and Kitchen Operations">
+                        BS International Hospital Management with Specialization in: Culinary Arts and Kitchen
+                        Operations
+                    </option>
+                    <option
+                        value="BS International Hospital Management with Specialization in: Hotel and Restaurant Administration">
+                        BS International Hospital Management with Specialization in: Hotel and Restaurant Administration
+                    </option>
+                    <option value="BS Internation Travel And Tourism Management">BS Internation Travel And Tourism
+                        Management </option>
+                    <option
+                        value="BS Internation Travel And Tourism Management with specialization in: Health and Wellness">
+                        BS
+                        Internation Travel And Tourism Management with specialization in: Health and Wellness </option>
+                    <option value="BS Mechanical Engineering">BS Mechanical Engineering </option>
+                    <option value="BS Medical Technology">BS Medical Technology </option>
+                    <option value="BS Pharmacy">BS Pharmacy </option>
+                    <option value="BS Psychology">BS Psychology </option>
+                    <option value="BS Radiolic Technology">BS Radiolic Technology </option>
+
+                </select>
+
+                <input type="date" name="date" id="date" disabled>
+
+                <div class="input-animate">
+                    <input type="tel" oninput="this.className = ''" name="entry.556721024" id="contact-num"
+                        placeholder=" " pattern="[0-9]{11}">
+                    <label for="contact-num">11-digit Phone No. (OPTIONAL)</label>
+                </div>
+
+                <div class="input-animate">
+                    <input type="text" oninput="this.className = ''" name="entry.1442699213" id="nationality"
+                        placeholder=" " required>
+                    <label for="name">Nationality *</label>
+                </div>
+
+                <div class="input-animate">
+                    <input type="email" oninput="this.className = ''" name="entry.827229241" id="email" placeholder=" "
+                        required>
+                    <label for="email">Email Address *</label>
+                </div>
+
+            </div>
+
+            <!-- <button id="cta-next">Next</button>
+            <input type="button" value="Next" id="cta-next"> -->
+
+            <div class="tab">
+                <h2 style="text-align:center"><b>Survey</b></h2>
+                <!-- Academic Program Table -->
+                <table class="table table-responsive table-academic-program">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Academic Program</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <!-- table questions -->
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Subjects in the curriculum are appropriate to chosen program.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1300814688" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1300814688" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1300814688" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1300814688" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1300814688" value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>References and other course materials are adequate, updated, clear and concise.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1749778124" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1749778124" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1749778124" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1749778124" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1749778124" value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>I can participate by giving comments and suggestions relevant to the course.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1021935240" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1021935240" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1021935240" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1021935240" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1021935240" value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>Course syllabus is well-organised, implemented and followed.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.276846281" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.276846281" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.276846281" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.276846281" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.276846281" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>e.</span>
+                                <p>Requirements and workloads are practical and manageable.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.959958337" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.959958337" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.959958337" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.959958337" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.959958337" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>f.</span>
+                                <p>Course syllabus is well-organised, implemented and followed.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.746673446" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.746673446" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.746673446" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.746673446" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.746673446" value="1">
+                        </td>
+                    </tr>
+                </table>
+                <!-- Learning and Teaching Methods Table -->
+                <table class="table table-responsive table-teaching-learning">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Learning and Teaching Methods</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <!-- table questions -->
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Grading policy is clear and communicated at the start of semester.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.585719781" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.585719781" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.585719781" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.585719781" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.585719781" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>Feedback is provided in order to improve my work.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1284386820" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1284386820" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1284386820" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1284386820" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1284386820" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>Professors showed mastery of the subject matter.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1591975755" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1591975755" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1591975755" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1591975755" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1591975755" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>Professors are enthusiastic and they use effective teaching strategies.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.2069886655" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.2069886655" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.2069886655" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.2069886655" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.2069886655" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>e.</span>
+                                <p>Concepts are discussed and explained well by professors.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.494835494" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.494835494" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.494835494" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.494835494" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.494835494" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>f.</span>
+                                <p>Professors are committed and are available for consultation.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1152934963" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1152934963" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1152934963" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1152934963" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1152934963" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>g.</span>
+                                <p>Instructional materials are appropriate for learning.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1184692745" value="5"
+                                required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1184692745" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1184692745" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1184692745" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1184692745" value="1">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>h.</span>
+                                <p>Professional relationships with students are maintained.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.450253130" value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.450253130" value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.450253130" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.450253130" value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.450253130" value="1">
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="checkbox-container">
+                    <div class="column1">
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1428328654" id="checkbox1"
+                                value="checked" required>
+                            <label for="checkbox1">The over-all reputation</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.360618115" id="checkbox2"
+                                value="checked">
+                            <label for="checkbox2">Research focus</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.328453304" id="checkbox3"
+                                value="checked">
+                            <label for="checkbox3">Curriculum or the content of the course</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1815943633" id="checkbox4"
+                                value="checked">
+                            <label for="checkbox4">Financial assistance is provided</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1443008115" id="checkbox5"
+                                value="checked">
+                            <label for="checkbox5">Payment Flexibility</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.898019626" id="checkbox6"
+                                value="checked">
+                            <label for="checkbox6">Quality of teaching of professors</label>
+                        </div>
+                        <div class="align">
+                            <input type="checkbox" oninput="this.className = ''" name="entry.178699730" id="checkbox7"
+                                value="checked">
+                            <label for="checkbox7">Student Services</label>
+                        </div>
+                    </div>
+
+                    <div class="column2">
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1025493591" id="checkbox8"
+                                value="checked">
+                            <label for="checkbox8">Reputation of my chosen course</label>
+                        </div>
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.2091756613" id="checkbox9"
+                                value="checked">
+                            <label for="checkbox9">Location</label>
+                        </div>
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1457827376" id="checkbox10"
+                                value="checked">
+                            <label for="checkbox10">It was recommended to me</label>
+                        </div>
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.906649943" id="checkbox11"
+                                value="checked">
+                            <label for="checkbox11">The cost of the course</label>
+                        </div>
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1426912014" id="checkbox12"
+                                value="checked">
+                            <label for="checkbox12">Good career opportunities</label>
+                        </div>
+                        <div class=align>
+                            <input type="checkbox" oninput="this.className = ''" name="entry.1223871384" id="checkbox13"
+                                value="checked">
+                            <label for="checkbox13">Facilities</label>
+                        </div>
+                        <!-- checkbox14 kasi para pag ni loop ng js pero hindi pa ako sure hehi -->
+                        <div>
+                            <div class="textarea">
+                                <label for="textarea">Others, Please Specify</label>
+                                <textarea id="textarea" oninput="this.className = ''" name="entry.308130274" rows="1"
+                                    cols="50"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Support Table -->
+                <table class="table table-responsive table-support">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Support</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <!-- table questions -->
+                    <tr>
+
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Health, welfare and conselling services are accessible.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1726390201" id="radio-btn1"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1726390201" id="radio-bt2"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1726390201" id="radio-bt3"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1726390201" id="radio-bt4"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1726390201" id="radio-bt5"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>There is available financial aid when needed.</p>
+                            </div>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1560035898" id="radio-btn6"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1560035898" id="radio-btn7"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1560035898" id="radio-btn8"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1560035898" id="radio-btn9"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1560035898" id="radio-btn10"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>Consultation to support my studies is provided.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.866639890" id="radio-btn11"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.866639890" id="radio-btn12"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.866639890"
+                                id="radio-radio-btn13" value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.866639890" id="radio-btn14"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.866639890" id="radio-btn15"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>I feel personally safe when inside the campus.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.517208785" id="radio-btn16"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.517208785" id="radio-btn17"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.517208785" id="radio-btn18"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.517208785" id="radio-btn19"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.517208785" id="radio-btn20"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>Staff are available when needed.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.830656231" id="radio-btn21"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.830656231" id="radio-btn22"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.830656231" id="radio-btn23"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.830656231" id="radio-btn24"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.830656231" id="radio-btn25"
+                                value="1">
+                        </td>
+
+                    </tr>
+
+                </table>
+
+                <!-- Facilities table -->
+                <table class="table table-responsive table-facilities">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Facilities</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+
+                    <!-- table questions -->
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Facilities for sports and other recreation are available within the campus.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.266461364" id="radio-btn26"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.266461364" id="radio-btn27"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.266461364" id="radio-btn28"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.266461364" id="radio-btn29"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.266461364" id="radio-btn30"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>Information Technology is accessible.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.960643960" id="radio-btn31"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.960643960" id="radio-btn32"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.960643960" id="radio-btn33"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.960643960" id="radio-btn34"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.960643960" id="radio-btn35"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>Library materials are adequate for student's needs.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1381171282" id="radio-btn36"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1381171282" id="radio-btn37"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1381171282" id="radio-btn38"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1381171282" id="radio-btn39"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1381171282" id="radio-btn40"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>Social facilities like canteen, chapel, organization rooms, etc. are provided within
+                                    the
+                                    university.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.372588599" id="radio-btn41"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.372588599" id="radio-btn42"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.372588599" id="radio-btn43"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.372588599" id="radio-btn44"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.372588599" id="radio-btn45"
+                                value="1">
+                        </td>
+
+                    </tr>
+
+                </table>
+
+
+                <!-- Personal Development Table -->
+                <table class="table table-responsive table-personal">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Personal Development</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <!-- table questions -->
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Communication Skills are improved.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.601699661" id="radio-btn46"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.601699661" id="radio-btn47"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.601699661" id="radio-btn48"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.601699661" id="radio-btn49"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.601699661" id="radio-btn50"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>I gained personal confidence through my university experience.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.943727266" id="radio-btn51"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.943727266" id="radio-btn52"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.943727266" id="radio-btn53"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.943727266" id="radio-btn54"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.943727266" id="radio-btn55"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>My stay in the university expand my employment opportunities.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1158426471" id="radio-btn56"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1158426471" id="radio-btn57"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1158426471" id="radio-btn58"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1158426471" id="radio-btn59"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1158426471" id="radio-btn60"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>My university experience broaden my perspective.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1201018972" id="radio-btn61"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1201018972" id="radio-btn62"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1201018972" id="radio-btn63"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1201018972" id="radio-btn64"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1201018972" id="radio-btn65"
+                                value="1">
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!-- Overall Table -->
+                <table class="table table-responsive table-overall">
+                    <!-- table header -->
+                    <thead>
+                        <tr>
+                            <th>Overall</th>
+                            <th>5</th>
+                            <th>4</th>
+                            <th>3</th>
+                            <th>2</th>
+                            <th>1</th>
+                        </tr>
+                    </thead>
+                    <!-- table questions -->
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>a.</span>
+                                <p>Overall, I am satisfied with the quality of the program I am enrolled in.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1650861089" id="radio-btn66"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1650861089" id="radio-btn67"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1650861089" id="radio-btn68"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1650861089" id="radio-btn69"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.1650861089" id="radio-btn70"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>b.</span>
+                                <p>Overall, my university experince meet my objectives and expectations.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.627276978" id="radio-btn71"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.627276978" id="radio-btn72"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.627276978" id="radio-btn73"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.627276978" id="radio-btn74"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.627276978" id="radio-btn75"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>c.</span>
+                                <p>I will definitely recommend LPU to my family, relatives and peers.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.736592374" id="radio-btn76"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.736592374" id="radio-btn77"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.736592374" id="radio-btn78"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.736592374" id="radio-btn79"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.736592374" id="radio-btn80"
+                                value="1">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="align">
+                                <span>d.</span>
+                                <p>Rate the extent of your overall satisfaction with your stay at LPU.</p>
+                            </div>
+                        </td>
+
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.89978037" id="radio-btn81"
+                                value="5" required>
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.89978037" id="radio-btn82"
+                                value="4">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.89978037" id="radio-btn83"
+                                value="3">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.89978037" id="radio-btn84"
+                                value="2">
+                        </td>
+                        <td>
+                            <input type="radio" oninput="this.className = ''" name="entry.89978037" id="radio-btn85"
+                                value="1">
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="textarea1">
+                    <label for="textarea1">Feel free to state your comments:</label>
+                    <textarea id="textarea1" oninput="this.className = ''" name="entry.689269693"
+                        placeholder="state your comment here.." rows="4" cols="50" required></textarea>
+                </div>
+                <div class="textarea2">
+                    <label for="textarea2">Any Creative suggestions in order to improve University programs and
+                        services:</label>
+                    <textarea id="textarea2" oninput="this.className = ''" name="entry.1627848334"
+                        placeholder="state your suggestion here.." rows="3" required></textarea>
+                </div>
+            </div>
+
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" class="cta-finish" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" class="cta-finish" onclick="nextPrev(1); ">Next</button>
+                </div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+            </div>
+
+        </form>
+
+        <footer class="footer-p1">
+            <div class="school-info-container">
+                <div class="logo-address-container">
+                    <div class="img">
+                        <img src="../images/pics/logo.png" alt="school-logo">
+                    </div>
+                    <div class="address">
+                        <h3>LPU Cavite Campus</h3>
+                        <p>Governor's Drive,</p>
+                        <p>Barangay Manggahan,</p>
+                        <p>General Trias,</p>
+                        <p>Cavite,</p>
+                        <p>Philippines</p>
+
+                        <div class="extra-info">
+                            <ul>
+                                <li>
+                                    <a href=" ">Copyright</a>
+                                </li>
+                                <li>
+                                    <a href=" ">Privacy</a>
+                                </li>
+                                <li>
+                                    <a href=" ">Policies</a>
+                                </li>
+                                <li>
+                                    <a href=" ">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media-container">
+                    <h3>Follow us:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/LPUCavite/">
+                                <img src="../images/svg/fb-wht.svg" alt="fb-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/LPUCavite">
+                                <img src="../images/svg/twitter-wht.svg" alt="twitter-icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/lpu_cavite/?hl=en">
+                                <img src="../images/svg/ig-wht.svg" alt="ig-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="creators-container">
+                    <h3>Created by:</h3>
+                    <p>Matthew A. Alivio</p>
+                    <p>John Mark M. Cacho</p>
+                    <p>John Warren C. Dela Peña</p>
+                    <p>Karl Glenn M. Eludo</p>
+                    <p>Franz S. Valois</p>
+                </div>
+
+            </div>
+
+
+
+        </footer>
+    </div>
+    <!-- Jquery and Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/scripts/page1.js"></script>
+</body>
+
+</html>
