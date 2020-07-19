@@ -1,5 +1,5 @@
 
-var submitted=false;
+var submitted = false;
 //set current date mas mahaba jquery wiws di pa gumana
 document.querySelector("#date").valueAsDate = new Date();
 
@@ -18,7 +18,7 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Finish Survey";
-    
+
   } else {
     document.getElementById("nextBtn").innerHTML = "Proceed to Survey";
   }
@@ -40,7 +40,7 @@ function nextPrev(n) {
     //...the form gets submitted:
     showAlert();
     document.getElementById("regForm").submit();
-    window.location ="page1.html"
+    window.location = "/"
     return false;
   }
   // Otherwise, display the correct tab:
@@ -81,6 +81,6 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-function showAlert(){
-    alert("Thank you for answering the survey!");
+function showAlert() {
+  alert("Thank you for answering the survey!");
 }
