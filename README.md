@@ -9,7 +9,7 @@
 * [MongoDB](https://www.mongodb.com/)
 ## Setup Guide
 ## Prerequisites
-## Author/Contributors
+## Authors/Contributors
 * [Karl Glenn Eludo](https://github.com/karleludo)(Github) - [k_eludo@icloud.com](mailto:k_eludo@icloud.com)
 * Matthew Alivio
 * John Mark Cacho 
