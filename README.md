@@ -1,7 +1,7 @@
 # SQuartic
 **Student Satisfaction Survey Sentiment Analysis.** Full-stack web application for conducting a Student Satisfaction Survey and generating reports from it.
 
->Note: this project is currently in development and improvement. Much of the current components of the app is created using third-party APIs and applications and are used for proof of concept prototyping.
+>Note: this project is in development. Much of the current components of the app is created using third-party APIs and applications and are used for prototyping.
 ## built with...
 * [NodeJS](https://nodejs.org/en/)
 * [ExpressJS](https://expressjs.com/)
