@@ -1,5 +1,5 @@
-const express = require("express"); // import express
-const bodyParser = require("body-parser"); // import bodyparser
+const express = require("express"); 
+const bodyParser = require("body-parser"); 
 const ejs = require("ejs");
 const cookieSession = require("cookie-session");
 const app = express();
