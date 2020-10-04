@@ -1,19 +1,28 @@
 {
-  "name": "project-main",
+  "name": "SQuartic",
   "version": "1.0.0",
-  "description": "",
+  "description": "Student Satisfaction Survey Sentiment Analysis. Full-stack web application for conducting a Student Satisfaction Survey and generating reports from it.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "contributors": [
+    "Karl Glenn M. Eludo",
+    "Matthew Alivio",
+    "John Mark Cacho",
+    "Van Jacob Rebosura",
+    "Warren Dela Peña",
+    "Franz Jerimy Valois"
+  ],
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-session": "^1.4.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "mongodb": "^3.6.2",
     "mongoose": "^5.9.2",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "python-shell": "^2.0.1"
   }
 }
