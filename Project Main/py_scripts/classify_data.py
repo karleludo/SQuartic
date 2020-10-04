@@ -11,8 +11,6 @@ worksheet = sh.worksheet("Form responses 1")
 
 #import models(classifer and vectorizer) in pickle
 loaded_model = pickle.load(open("MNB_Clf.sav", "rb"))
-
-
 word_features = pickle.load(open("word_features.sav", "rb"))
 
 def find_features(document):

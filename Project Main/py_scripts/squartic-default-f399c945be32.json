@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "squartic-default",
+  "private_key_id": "f399c945be32110eb4f3b6862f576c785748a9e0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDXCjmIIsTXFxpG\ngXFxGoUx+2dkzRkKcrScwqmQugzPlqW5Ecnv7vdF3H8c8/+ucn5mVrvk3D35hVHk\nyTKCV1utuoSVVwQNLutr8gLFVvrNd6zrMRbng6t3syqc8+igORCF8QP0DV0uYTSE\n3GlH1nMtzI35Xb/ChHKIWCfwjheWSe7qbrUMz11tm+scULrszcVbAeLvZuzKnvxw\nuffKd6R733rP+dFyiV1YrueCkYkBiXNAmwGyCAz5Rt35TJVOLY9bog6akLGrMOww\n4IbxDegxrxY+K5eDsYDcDgwBvFDZ+RYZ2Nr7l89lo+LL4XY8FO4fN78zilD/taQM\ncvRw0H6RAgMBAAECggEAEWhXPG0+HIBXBO6dGZARSLjGh6svtAARnWAHvHrHJzXV\ngAwP2g+w7jOZiaU55SwJDe1HBBGNJcoUVU4xO8ppFkDzUyiKYCvUbHZYoZN3NZNS\nyO4+Iasvwf6bvD1lbzT3YLRgQs0jJipBx2CVWDakt8gnlRBxAcTZha6HOyqxf52h\n/7PaV9HNhY7S7shIGtl0GAM2zABe1Qgsg+QOrV5FnCGMJKYmpqHuW0ATErCGXUZy\nVhRZ5h96u+FKIUhJLGEzdjnrMrAA+8+fMcp1HhyPDw1WWeD22F0bR6a5YEQShYzP\nmGInIn1KJvGiyYIFbgz18drJvQGLQ/KmhTybZxoJLQKBgQD4q7Vd9kAIyFdoymdI\nxX2lX9AnhzvwQ44FrANBIW5yaKuGTRi5nCRxBEgWs4KOk2oKztzWwCqkJ+umNi3T\n0igSNKJF44TOLk94j9SxQF47Jh47ejI8RZDTv3YCmCPZ9wm0giSOSAZ7rGujNKJ+\n4Y/PTSNBpwB0pFdEm43i52ooFQKBgQDdYMMoXq4+u53gRxGJ1wocaXz+VkUHDTyI\n/Lu0XBjkLGh6gNzO40MV5E+KpY4mN+TrLOlR7FuToD6dXqjAp/mT6FvqtHSB3d3F\npCCNXbRuzdqXaqDiQP0wwrJC9LoF90tYtFfbIOpDumNXGH3haBWthFHExRc7bg8h\nCrXq4x5/jQKBgFvEOfz/1+elzyP7tZvUTabOsek0bbkfpPSQ4u6RIMoVuF6qatps\nNcKDOvstqZtl6Tct2a9iYRoNJVhEHCtUHbeCNvQlnyfbTTaHlY0H3P5k9bkrQgid\n/3E08Z7JeEmCcdFsSYM8LzBKk7o5vVGnecOdiso6j997mjzWTskSb0l1AoGBALGE\nDfopMgAL4iUd1+p4DRuLWzd3ZhKpgok2YC3YS/1rvru86VLc2caMNVwwNTRgTahn\ncxDGPwi5znvSk+8owvDfuhUSbvpUNqltWs0A/tZ7K3WPg0LqahzXgqo+I4z1J+4R\nbwG/+xokM9R7RzWgiQGCwS7P/Dkjn+4W8JlRVfthAoGBAJiTFi+ATVw9v4AwYNPj\nmsdtxrx6vvGz2GcgHCGAPWA0yOE0uyw65IbZfpRDWMZtrTeXYs+gfyGWfpExbhvh\n+QysgQugJWZJ4sLof2RVu12lCxAvoxYvZIy4SmDGSyhplfGyZXd6MPFUlFzajSE5\n3G9/J/2zpk9zwqlL8BP6e6sY\n-----END PRIVATE KEY-----\n",
+  "client_email": "karl-glenn-eludo@squartic-default.iam.gserviceaccount.com",
+  "client_id": "105994979386653147363",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/karl-glenn-eludo%40squartic-default.iam.gserviceaccount.com"
+}
