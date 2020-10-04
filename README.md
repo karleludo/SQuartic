@@ -8,6 +8,16 @@
 * [ReactJS](https://reactjs.org/)
 * [MongoDB](https://www.mongodb.com/)
 ## Setup Guide
+>Note:todo: pre-release v0.5-alpha draft
+
+* To install the package and run it locally, download tarball file in the release. `SQuartic-X.tar`
+* run the following command
+```console
+npm install <tarball file>
+```
+
+
+
 ## Prerequisites
 ## Authors/Contributors
 * [Karl Glenn Eludo](https://github.com/karleludo)(Github) - [k_eludo@icloud.com](mailto:k_eludo@icloud.com)
