@@ -1,5 +1,5 @@
 {
-  "name": "SQuartic",
+  "name": "squartic",
   "version": "1.0.0",
   "description": "Student Satisfaction Survey Sentiment Analysis. Full-stack web application for conducting a Student Satisfaction Survey and generating reports from it.",
   "main": "index.js",
