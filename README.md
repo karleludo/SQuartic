@@ -2,11 +2,7 @@
 **Student Satisfaction Survey Sentiment Analysis.** Full-stack web application for conducting a Student Satisfaction Survey and generating reports from it.
 
 >Note: this project is in development. Much of the current components of the app is created using third-party APIs and applications and are used for prototyping.
-## built with...
-* [NodeJS](https://nodejs.org/en/)
-* [ExpressJS](https://expressjs.com/)
-* [ReactJS](https://reactjs.org/)
-* [MongoDB](https://www.mongodb.com/)
+
 ## Setup Guide
 >Note:todo: pre-release v0.5-alpha draft
 
