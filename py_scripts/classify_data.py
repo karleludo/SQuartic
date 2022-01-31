@@ -2,7 +2,7 @@ import gspread
 import pickle
 from nltk.tokenize import word_tokenize
 
-#hide this shit
+
 gc = gspread.service_account(filename='squartic-default-f399c945be32.json')
 
 sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1DjMrsMH9erslRNwCGfT9pn4B1qyA4otPB9kRH7rstgY')
