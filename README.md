@@ -1,5 +1,5 @@
 - [x] this project gonna be archived 
-- [ ] and remade (properly this time...)
+
 
 # SQuartic
 **Student Satisfaction Survey Sentiment Analysis.** Full-stack web application for conducting a Student Satisfaction Survey and generating reports from it.
