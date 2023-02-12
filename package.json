@@ -22,7 +22,7 @@
     "express": "^4.17.1",
     "mongodb": "^3.6.2",
     "mongoose": "^5.9.2",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "python-shell": "^2.0.1"
   }
 }
